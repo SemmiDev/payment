@@ -1,0 +1,26 @@
+POST http://localhost:3000/api/transactions
+Accept: application/json
+Content-Type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "email": "john_doe@gmail.com",
+  "phone": "123123123",
+  "gross_amount": 10000000
+}
+
+### for testing
+
+# 4811 1111 1111 1114 = Nomor kartu
+# 01/25 = masa berlaku
+# 123 = CVV
+# 112233 = Password
+
+###
+
+
+GET http://localhost:3000/api/transactions/status/9e1206a5-08b5-4beb-85f8-c4e1bad5f140
+Accept: application/json
+Content-Type: application/json
+
